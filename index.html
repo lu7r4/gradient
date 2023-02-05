@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+      <meta charset="UTF-8">
+      <div class="title">Linear-gradient CSS CODE</div>
+    </head>
+    
+    <body>
+
+<div class="wrapper">
+  <div class="card"></div>
+  <div class="input">
+    <div class="range">
+      <label>0&#176; </label>
+      <input type="range" name="rotate" id="rotate" min="0" max="180"  value="">
+      <label>180&#176; </label>
+    </div>
+  <input class="color__1" type="color" name="color1" value="#aabbff">
+  <input class="color__2" type="color" name="color2" value="#ffaabb">
+</div>
+  <div class="result">
+    <h2>CSS CODE</h2>
+    <div class="code">
+      <p>LINEAR-GRADIENT(90DEG, RGB(250, 170, 187), RGB(67, 187, 255));</p>
+    </div>
+  </div>
+<div class="coding">
+  let css = document.querySelector("p");<br>
+  let color1 = document.querySelector(".color__1");<br>
+  let color2 = document.querySelector(".color__2");<br>
+  let card = document.querySelector(".card");<br>
+  let gradRotate = document.getElementById("rotate");<br>
+  function setGradient() {<br>
+  card.style.background = <br>
+  `linear-gradient(${gradRotate.value}deg, <br>${color1.value}, ${color2.value})`;<br>
+  css.textContent = card.style.background + ";";<br>
+  }<br>
+  gradRotate.addEventListener("input", setGradient)<br>
+  color1.addEventListener("input", setGradient);<br>
+  color2.addEventListener("input", setGradient);<br>      
+</div>
+</div>
+  
+        
+      
+      
+      
+
+         
+    </body>
+    
+    
+
+    
+    <script src="js.js"></script>
+</body>
+</html>
